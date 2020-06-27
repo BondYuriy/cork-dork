@@ -1,0 +1,43 @@
+.btn {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-gold-transparent {
+  height: 40px;
+  border: 1px solid $gold-color;
+  font-weight: $Semi-bold;
+  font-size: 12px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white-text;
+
+  &:hover {
+    background-color: $gold-color;
+    color: $white-text;
+  }
+}
+
+.btn-black-transparent {
+  height: 40px;
+  border: 1px solid $text-color;
+  font-weight: $Semi-bold;
+  font-size: 12px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $text-color;
+
+  &:hover {
+    background-color: $text-color;
+    color: $white-text;
+  }
+}

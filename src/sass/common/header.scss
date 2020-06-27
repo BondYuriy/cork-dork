@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  padding: 44px 5%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+
+  & .logo {
+    margin-right: 25.87%;
+  }
+
+  & p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    color: $gold-color;
+  }
+
+  & .btn {
+    width: 11.86%;
+    margin-left: 8.85%;
+  }
+}

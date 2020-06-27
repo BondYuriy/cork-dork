@@ -1,0 +1,65 @@
+.dream-wine-block {
+  position: relative;
+  padding: 230px 8% 230px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:before {
+    display: block;
+    content: '';
+    width: 50vw;
+    height: 100%;
+    background-color: $beige-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  & .title {
+    width: 35%;
+    font-family: $HeadingPro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 70px;
+    letter-spacing: -0.705882px;
+    color: $gold-color;
+    position: absolute;
+    top: 160px;
+    z-index: 4;
+  }
+
+  & .img-bi {
+    width: 21.6%;
+    height: 387px;
+    background-image: url('../images/Image-cork-2.jpg');
+    background-size: cover;
+    position: absolute;
+    bottom: 96px;
+    z-index: 2;
+  }
+
+  & .img-block {
+    position: relative;
+    z-index: 3;
+    padding: 0 6% 0 8.75%;
+  }
+
+  & .content {
+    position: relative;
+    z-index: 3;
+
+    & .btn-block {
+      margin-top: 61px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .btn {
+        flex: 0 0 48.7%;
+      }
+    }
+  }
+}

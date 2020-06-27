@@ -1,0 +1,47 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: $Montserrat;
+  font-weight: $Regular;
+  font-size: $font-text;
+  color: $text-color;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// main {
+//   overflow: hidden;
+// }
+
+input,
+button {
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+}

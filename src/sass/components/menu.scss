@@ -1,0 +1,253 @@
+.menu {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  width: 6.25vw;
+  height: 100vh;
+  background-color: #fff;
+  transition: 0.4s;
+
+  &:before {
+    content: '';
+    width: 40.6%;
+    height: 100%;
+    background-image: url('../images/menu-background.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  & .menu-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 44px 12% 44px 5%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 2;
+
+    & .logo .logo-text span {
+      color: $text-color;
+    }
+
+    & .btn {
+      width: 11.86%;
+      margin-left: 8.85%;
+    }
+  }
+
+  & .nav-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12% 0 5%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    & nav {
+      flex: 0 0 45%;
+
+      & ul {
+        & li {
+          & a {
+            font-family: $HeadingPro;
+            font-weight: $Regular;
+            font-size: 36px;
+            line-height: 60px;
+            color: $text-color;
+            transition: 0.3s;
+
+            &:hover {
+              color: $gold-color;
+              padding-left: 5px;
+            }
+          }
+
+          & .active {
+            font-weight: $bold;
+            color: $gold-color;
+            display: flex;
+            align-items: center;
+
+            &:hover {
+              padding-left: 0;
+            }
+
+            &:before {
+              display: inline-block;
+              content: '';
+              width: 60px;
+              height: 3px;
+              background-color: $gold-color;
+              margin-right: 7px;
+            }
+          }
+        }
+      }
+    }
+
+    & .img {
+      flex: 0 0 53.5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.menu-open {
+  width: 100vw;
+
+  &:before {
+    right: 120px;
+  }
+}
+
+.menu-aside {
+  width: 120px;
+  height: 100%;
+  background-color: $text-color;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+
+  & .btn-menu {
+    background: 0;
+    height: 21px;
+    width: 48px;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    position: absolute;
+    top: 53px;
+    right: 36px;
+    z-index: 5;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+    & .bar {
+      opacity: 0.7;
+
+      &,
+      &::before,
+      &::after {
+        transition: 0.2s linear 0.1s, 0.2s top linear 0.2s,
+          0.2s transform linear;
+        position: absolute;
+        background: $gold-color;
+        width: 100%;
+        height: 3px;
+        content: '';
+        top: 50%;
+        right: 0;
+      }
+
+      &::before {
+        top: -10px;
+      }
+
+      &::after {
+        top: 10px;
+        width: 50%;
+      }
+
+      &::before,
+      &::after {
+        transform: rotate(0deg);
+      }
+    }
+
+    &:hover .bar {
+      opacity: 1;
+
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+
+  & .active .bar {
+    background: 0;
+
+    &::before {
+      transform: rotate(45deg);
+      background: $gold-color;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      background: $gold-color;
+      width: 100%;
+    }
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &,
+    &::before,
+    &::after {
+      transition: 0.2s background linear 0.1s, 0.2s top linear,
+        0.2s transform linear 0.2s;
+    }
+  }
+
+  & .social {
+    width: 120px;
+    height: 100%;
+    overflow: hidden;
+
+    & ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotate(-90deg);
+
+      & li {
+        margin-right: 41px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      & a {
+        font-family: $HeadingPro;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: -0.205882px;
+        color: #656567;
+        transition: 0.3s;
+
+        &:hover {
+          color: $white-text;
+        }
+      }
+    }
+  }
+
+  & .btn-down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 53px;
+    background: 0;
+    outline: 0;
+    padding: 0;
+    border: 0;
+  }
+}
