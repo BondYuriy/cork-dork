@@ -1,11 +1,12 @@
 .menu {
-  position: fixed;
+  position: absolute;
   z-index: 10;
   right: 0;
-  width: 6.25vw;
-  height: 100vh;
+  width: 120px;
+  height: 980px;
   background-color: #fff;
   transition: 0.4s;
+  overflow: hidden;
 
   &:before {
     content: '';

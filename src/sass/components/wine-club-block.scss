@@ -1,0 +1,31 @@
+.wine-club-block {
+  padding: 96px 5%;
+  position: relative;
+
+  & .info-block {
+    width: 32.4%;
+    position: absolute;
+    left: 12.6%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    line-height: 32px;
+    color: $white-text;
+
+    & .title {
+      font-family: $HeadingPro;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 70px;
+      letter-spacing: -0.705882px;
+      color: $gold-color;
+      margin-bottom: 40px;
+    }
+
+    & .btn {
+      width: 43%;
+      margin-top: 50px;
+    }
+  }
+}
