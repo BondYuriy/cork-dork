@@ -41,3 +41,15 @@
     color: $white-text;
   }
 }
+
+.btn-gold {
+  height: 26px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 2.66667px;
+  text-transform: uppercase;
+  color: $gold-color;
+  border-bottom: 2px solid $gold-color;
+  text-align: left;
+}

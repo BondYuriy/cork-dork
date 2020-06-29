@@ -1,0 +1,110 @@
+.instagram-block {
+  padding: 76px 5% 96px 5%;
+
+  & .title {
+    margin: 0;
+
+    & a {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 70px;
+      letter-spacing: 1.66667px;
+      color: $text-color;
+      transition: 0.3s;
+
+      &:hover {
+        color: $gold-color;
+      }
+    }
+  }
+
+  & .gallery-collage {
+    display: flex;
+    align-items: center;
+    margin-top: -35px;
+
+    & .gallery-collage-main {
+      flex: 0 0 39.0625%;
+    }
+
+    & .gallery-collage-list {
+      flex: 0 0 60.9375%;
+
+      & .list-box-1,
+      .list-box-2 {
+        display: flex;
+        align-items: flex-end;
+
+        & .list-itet {
+          flex: 0 0 32.05%;
+
+          & .link {
+            min-width: 55%;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: 1px;
+            text-decoration-line: underline;
+            color: $white-text;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+        }
+      }
+
+      & .list-box-1 {
+        & .list-itet:nth-child(1) {
+          flex: 0 0 35.8974%;
+        }
+      }
+
+      & .list-box-2 {
+        align-items: flex-start;
+
+        & .list-itet:nth-child(2) {
+          flex: 0 0 35.8974%;
+        }
+      }
+    }
+  }
+}
+
+.gallery-img-box {
+  display: block;
+
+  & .container-wh {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+
+    & .container-vw {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      & .display {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: relative;
+
+        & img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transition: 0.3s;
+
+          &:hover {
+            transform: scale(1.04);
+          }
+        }
+      }
+    }
+  }
+}

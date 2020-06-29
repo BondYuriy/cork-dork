@@ -1,0 +1,36 @@
+.sticker {
+  width: 166px;
+  height: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $gold-color;
+  color: $white-text;
+
+  & .date {
+    & .data {
+      display: block;
+      font-weight: 500;
+      font-size: 34px;
+      line-height: 40px;
+      letter-spacing: -0.5px;
+      text-align: center;
+    }
+
+    & .month {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: -0.235294px;
+      text-transform: uppercase;
+      align-items: center;
+    }
+  }
+
+  & > span {
+    width: 20px;
+    height: 1px;
+    background-color: $white;
+    margin: 0 10px;
+  }
+}
