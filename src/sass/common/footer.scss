@@ -1,1 +1,122 @@
+.footer-wrapper {
+  background-color: $text-color;
+}
 
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 86px 5% 73px 12.6%;
+  position: relative;
+
+  & .logo {
+    margin-right: 81px;
+
+    & .logo-img {
+      width: 68px;
+      height: 72px;
+    }
+
+    & .logo-text span {
+      font-size: 14px;
+      line-height: 27px;
+    }
+  }
+
+  & .social {
+    margin-right: 83px;
+
+    & ul li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & a {
+        font-family: $HeadingPro;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: -0.176471px;
+        color: #656567;
+        transition: 0.3s;
+
+        &:hover {
+          color: $white-text;
+        }
+      }
+    }
+  }
+
+  & .footer-nav {
+    & .nav {
+      margin-bottom: 26px;
+
+      & ul {
+        display: flex;
+        align-items: center;
+
+        & li {
+          margin-right: 60px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          & a {
+            font-family: $HeadingPro;
+            font-size: 12px;
+            line-height: 14px;
+            letter-spacing: -0.176471px;
+            color: #656567;
+            transition: 0.3s;
+
+            &:hover {
+              color: $white-text;
+            }
+          }
+        }
+      }
+    }
+
+    & .copyright-block {
+      padding-top: 19px;
+      border-top: 1px solid #3e3d3d;
+
+      & a {
+        margin-right: 60px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #656567;
+        transition: 0.3s;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover {
+          color: $white-text;
+        }
+      }
+    }
+  }
+
+  & .to-top {
+    position: absolute;
+    right: 20px;
+    transform: rotate(-90deg);
+
+    & span {
+      font-family: $HeadingPro;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: -0.205882px;
+      color: #656567;
+      margin-right: 5px;
+    }
+
+    & img {
+      transform: rotate(90deg);
+    }
+  }
+}
