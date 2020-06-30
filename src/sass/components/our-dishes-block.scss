@@ -1,6 +1,6 @@
 .our-dishes-block {
   display: flex;
-  padding: 0 5% 96px 5%;
+  padding: 0 0 96px 0;
   position: relative;
 
   & .our-dishes {
@@ -17,7 +17,7 @@
 
       & .title {
         margin: 0;
-        font-family: $gold-color;
+        font-family: $HeadingPro;
         font-style: normal;
         font-weight: bold;
         font-size: 48px;
@@ -120,12 +120,27 @@
   & .img-block {
     flex: 0 0 42.2454%;
     height: 970px;
+    position: relative;
 
     & img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+
+  & .img-bi {
+    width: 209px;
+    height: 209px;
+    position: absolute;
+    left: -105px;
+    bottom: -105px;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
   }
 }

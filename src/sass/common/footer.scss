@@ -5,7 +5,7 @@
 .footer {
   display: flex;
   align-items: center;
-  padding: 86px 5% 73px 12.6%;
+  padding: 86px 0 73px 7.6%;
   position: relative;
 
   & .logo {
@@ -103,7 +103,7 @@
 
   & .to-top {
     position: absolute;
-    right: 20px;
+    right: -54px;
     transform: rotate(-90deg);
     cursor: pointer;
 

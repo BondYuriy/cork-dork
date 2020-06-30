@@ -15,7 +15,7 @@
 }
 
 .dream-wine-block {
-  padding: 230px 8% 230px 5%;
+  padding: 230px 3% 230px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,12 +45,20 @@
   }
 
   & .img-block {
+    flex: 0 0 59.768%;
     position: relative;
     z-index: 3;
-    padding: 0 6% 0 8.75%;
+    padding: 0 0 0 8.75%;
+    margin-right: 6%;
+
+    & img {
+      display: block;
+      width: 100%;
+    }
   }
 
   & .content {
+    flex: 0 0 29.7917%;
     position: relative;
     z-index: 3;
 

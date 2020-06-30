@@ -8,7 +8,7 @@
 
 .header {
   display: flex;
-  padding: 44px 5%;
+  padding: 44px 140px 44px 5%;
 
   & .logo {
     margin-right: 25.87%;
@@ -26,5 +26,30 @@
   & .btn {
     width: 11.86%;
     margin-left: 8.85%;
+  }
+
+  & .basket {
+    display: block;
+    height: 30px;
+    margin-left: 2.5%;
+    position: relative;
+
+    & span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: $text-color;
+      font-weight: bold;
+      font-size: 11px;
+      line-height: 13px;
+      text-transform: uppercase;
+      color: $beige-color;
+      position: absolute;
+      right: -7px;
+      bottom: -9px;
+    }
   }
 }

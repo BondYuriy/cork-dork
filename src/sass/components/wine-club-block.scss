@@ -1,6 +1,11 @@
 .wine-club-block {
-  padding: 96px 5%;
+  padding: 96px 0;
   position: relative;
+
+  & img {
+    display: block;
+    width: 100%;
+  }
 
   & .info-block {
     width: 32.4%;

@@ -1,6 +1,6 @@
 .contact-block {
   display: flex;
-  padding: 0 5% 95px 5%;
+  padding: 0 0 95px 0;
   position: relative;
 
   &:before {
@@ -10,7 +10,7 @@
     height: 690px;
     background-image: url('../images/Image-cork.jpg');
     position: absolute;
-    left: 0;
+    left: -7%;
     top: 50%;
     transform: translateY(calc(-50% - 47px));
     z-index: -1;
@@ -145,5 +145,10 @@
 
   & .map {
     flex: 0 0 61%;
+
+    & img {
+      display: block;
+      width: 100%;
+    }
   }
 }
