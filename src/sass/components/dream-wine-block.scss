@@ -1,9 +1,5 @@
-.dream-wine-block {
+.dream-wine-wrapper {
   position: relative;
-  padding: 230px 8% 230px 5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   &:before {
     display: block;
@@ -16,6 +12,13 @@
     left: 0;
     z-index: 1;
   }
+}
+
+.dream-wine-block {
+  padding: 230px 8% 230px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   & .title {
     width: 35%;

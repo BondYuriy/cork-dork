@@ -1,5 +1,41 @@
 /* base */
 
+@media (min-width: 1920px) {
+  .home-container {
+    width: 1920px;
+  }
+}
+
+@media (max-width: 1919px) {
+  .home-container {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .home-container {
+    width: 992px;
+  }
+}
+
+@media (max-width: 991px) {
+  .home-container {
+    width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-container {
+    width: 576px;
+  }
+}
+
+@media (max-width: 575px) {
+  .home-container {
+    width: auto;
+  }
+}
+
 /* header */
 
 /* footer */
