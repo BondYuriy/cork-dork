@@ -2,7 +2,7 @@ $(document).ready(function () {
   /* menu */
 
   $('.js-menu').on('click', function () {
-    $(this).toggleClass('active');
+    $(this).toggleClass('btn-menu-active');
     $('.menu').toggleClass('menu-open');
   });
 

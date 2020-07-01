@@ -8,10 +8,10 @@
 
 .header {
   display: flex;
-  padding: 44px 140px 44px 5%;
+  padding: 44px 165px 44px 5%;
 
   & .logo {
-    margin-right: 25.87%;
+    margin-right: auto;
   }
 
   & p {
@@ -25,13 +25,13 @@
 
   & .btn {
     width: 11.86%;
-    margin-left: 8.85%;
+    margin-left: 12%;
   }
 
   & .basket {
     display: block;
     height: 30px;
-    margin-left: 2.5%;
+    margin-left: 2.8%;
     position: relative;
 
     & span {

@@ -7,7 +7,7 @@
     display: block;
     content: '';
     width: 218px;
-    height: 690px;
+    height: 78%;
     background-image: url('../images/Image-cork.jpg');
     position: absolute;
     left: -7%;
@@ -37,6 +37,7 @@
       .schedule,
       .phone {
         display: flex;
+        align-items: flex-start;
         font-weight: 500;
         font-size: 18px;
         line-height: 24px;
@@ -58,6 +59,7 @@
 
         & img {
           margin-right: 15px;
+          padding-top: 3px;
         }
       }
 

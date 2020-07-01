@@ -21,6 +21,7 @@
   align-items: center;
 
   & .title {
+    margin: 0;
     width: 35%;
     font-family: $HeadingPro;
     font-style: normal;
@@ -61,6 +62,7 @@
     flex: 0 0 29.7917%;
     position: relative;
     z-index: 3;
+    text-align: justify;
 
     & .btn-block {
       margin-top: 61px;
