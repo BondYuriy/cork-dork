@@ -4,6 +4,7 @@ $(document).ready(function () {
   $('.js-menu').on('click', function () {
     $(this).toggleClass('btn-menu-active');
     $('.menu').toggleClass('menu-open');
+    $('.menu-backdrop').toggleClass('menu-backdrop-view');
   });
 
   /* carousel */
@@ -18,6 +19,17 @@ $(document).ready(function () {
     autoplay: false,
     autoplayTimeout: 3000,
     autoplayHoverPause: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+
+  $('.our-dishes-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
     responsive: {
       0: {
         items: 1,

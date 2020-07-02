@@ -207,10 +207,29 @@
 
 .menu-open {
   width: 100vw;
+  box-shadow: 0px 2px 4px rgba(44, 43, 43, 0.4);
 
   &:before {
     right: 120px;
   }
+}
+
+.menu-backdrop {
+  box-sizing: border-box;
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(44, 43, 43, 0.4);
+  z-index: 9;
+}
+
+.menu-backdrop-view {
+  display: block;
 }
 
 .menu-aside {

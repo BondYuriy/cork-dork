@@ -8,6 +8,7 @@
     min-height: 970px;
     background-color: $beige-color;
     padding: 103px 8.33% 96px 8.33%;
+    overflow: hidden;
 
     & .our-dishes-header {
       display: flex;
@@ -85,36 +86,38 @@
         }
       }
 
-      & .tab-content .menu-list ul li {
-        margin-bottom: 60px;
+      & .tab-content {
+        & .menu-list ul li {
+          margin-bottom: 60px;
 
-        & .title,
-        .title a {
-          margin: 0;
-          font-family: $HeadingPro;
-          font-weight: $bold;
-          font-size: 24px;
-          letter-spacing: -0.352941px;
-          color: $text-color;
-          line-height: 36px;
-          transition: 0.3s;
-
-          &:hover {
-            color: $gold-color;
-          }
-        }
-
-        & .title {
-          margin-bottom: 30px;
-        }
-
-        & p {
-          font-size: 14px;
-          line-height: 26px;
-          color: #908777;
-
-          &:last-child {
+          & .title,
+          .title a {
             margin: 0;
+            font-family: $HeadingPro;
+            font-weight: $bold;
+            font-size: 24px;
+            letter-spacing: -0.352941px;
+            color: $text-color;
+            line-height: 36px;
+            transition: 0.3s;
+
+            &:hover {
+              color: $gold-color;
+            }
+          }
+
+          & .title {
+            margin-bottom: 30px;
+          }
+
+          & p {
+            font-size: 14px;
+            line-height: 26px;
+            color: #908777;
+
+            &:last-child {
+              margin: 0;
+            }
           }
         }
       }
