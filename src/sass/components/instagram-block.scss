@@ -56,15 +56,17 @@
       }
 
       & .list-box-1 {
-        & .list-itet:nth-child(1) {
-          flex: 0 0 35.8974%;
+        & .list-item {
+          &:nth-child(1) {
+            flex: 0 0 35.8974%;
+          }
         }
       }
 
       & .list-box-2 {
         align-items: flex-start;
 
-        & .list-itet:nth-child(2) {
+        & .list-item:nth-child(2) {
           flex: 0 0 35.8974%;
         }
       }
