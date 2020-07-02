@@ -19,6 +19,10 @@
     & .logo-text span {
       font-size: 14px;
       line-height: 27px;
+
+      & .logo-mobile {
+        display: none;
+      }
     }
   }
 
