@@ -7,6 +7,14 @@ $(document).ready(function () {
     $('.menu-backdrop').toggleClass('menu-backdrop-view');
   });
 
+  /* accaunt-menu */
+
+  $('.btn-account').on('click', function () {
+    // $(this).toggleClass('btn-menu-active');
+    $('.accaunt-menu').toggleClass('account-menu-open');
+    // $('.menu-backdrop').toggleClass('menu-backdrop-view');
+  });
+
   /* carousel */
 
   $('.home-carousel').owlCarousel({
