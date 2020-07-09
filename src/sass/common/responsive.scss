@@ -1285,7 +1285,7 @@
 
 @media (min-width: 2560px) {
   .home-carousel-card {
-    height: 1440px;
+    min-height: 1440px;
 
     & .info-block {
       & .info {
@@ -1319,7 +1319,7 @@
 
 @media (max-width: 1919px) {
   .home-carousel-card {
-    height: 600px;
+    min-height: 600px;
 
     & .img {
       height: 100%;
@@ -1384,6 +1384,8 @@
 
 @media (max-width: 1199px) {
   .home-carousel-card {
+    height: 600px;
+
     & .info-block {
       width: 100%;
       padding: 0 90px 0 30px;
@@ -1489,7 +1491,7 @@
 
 @media (min-width: 2560px) {
   .menu {
-    height: 1440px;
+    min-height: 1440px;
     width: 160px;
 
     & .btn-down {
@@ -1570,7 +1572,7 @@
 
 @media (max-width: 1919px) {
   .menu {
-    height: 600px;
+    min-height: 600px;
 
     & .menu-header {
       padding: 44px 12% 44px 5%;
@@ -1594,6 +1596,7 @@
 
 @media (max-width: 1199px) {
   .menu {
+    height: 600px;
     width: 60px;
 
     &:before {

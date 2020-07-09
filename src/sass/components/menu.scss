@@ -3,7 +3,8 @@
   z-index: 10;
   right: 0;
   width: 120px;
-  height: 980px;
+  height: 100vh;
+  min-height: 980px;
   background-color: #fff;
   transition: 0.4s;
   overflow: hidden;
@@ -179,7 +180,7 @@
         transition: 0.5s;
       }
 
-      & > p {
+      & .adress {
         display: none;
         margin: 0;
       }
@@ -190,18 +191,15 @@
 
       & .btn-menu-open {
         display: block;
+        margin-right: 65px;
       }
 
       & .btn-account {
-        & span {
-          color: $text-color;
-        }
+        display: none;
       }
 
       & .basket {
-        & svg {
-          fill: $text-color;
-        }
+        display: none;
       }
     }
   }
