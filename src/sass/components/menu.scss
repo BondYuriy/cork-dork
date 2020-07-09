@@ -7,6 +7,7 @@
   background-color: #fff;
   transition: 0.4s;
   overflow: hidden;
+  display: flex;
 
   &:before {
     content: '';
@@ -21,50 +22,8 @@
     z-index: 1;
   }
 
-  & .menu-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 44px 8% 44px 5%;
-    position: relative;
-    z-index: 2;
-
-    & .logo .logo-text span {
-      color: $text-color;
-    }
-
-    & .btn {
-      width: 11.86%;
-      margin-left: auto;
-    }
-
-    & .basket {
-      display: block;
-      height: 30px;
-      margin-left: 2.5%;
-      position: relative;
-
-      & span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        background: $text-color;
-        font-weight: bold;
-        font-size: 11px;
-        line-height: 13px;
-        text-transform: uppercase;
-        color: $beige-color;
-        position: absolute;
-        right: -7px;
-        bottom: -9px;
-        opacity: 0.8;
-      }
-    }
-  }
-
   & .nav-block {
+    flex: 0 0 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -211,6 +170,40 @@
 
   &:before {
     right: 120px;
+  }
+
+  & ~ .header-wrapper {
+    & .header {
+      & .logo .logo-text span {
+        color: $text-color;
+        transition: 0.5s;
+      }
+
+      & > p {
+        display: none;
+        margin: 0;
+      }
+
+      & .btn-header {
+        display: none;
+      }
+
+      & .btn-menu-open {
+        display: block;
+      }
+
+      & .btn-account {
+        & span {
+          color: $text-color;
+        }
+      }
+
+      & .basket {
+        & svg {
+          fill: $text-color;
+        }
+      }
+    }
   }
 }
 
