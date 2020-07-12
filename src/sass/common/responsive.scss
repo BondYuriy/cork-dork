@@ -179,6 +179,72 @@
 }
 
 @media (max-width: 1199px) {
+  .btn-menu-wrapper {
+    width: 60px;
+    height: 85px;
+
+    & .btn-menu {
+      height: 13px;
+      width: 30px;
+      top: 31px;
+      right: 15px;
+
+      & .bar {
+        &,
+        &::before,
+        &::after {
+          height: 2px;
+        }
+
+        &::before {
+          top: -6px;
+        }
+
+        &::after {
+          top: 6px;
+        }
+      }
+    }
+
+    & .btn-menu-active .bar {
+      &::before,
+      &::after {
+        top: 0;
+      }
+    }
+  }
+
+  .account-menu,
+  .basket-menu {
+    height: 600px;
+  }
+
+  .account-menu-open,
+  .basket-menu-open {
+    width: 57vw;
+  }
+
+  .account-menu {
+    padding: 156px 0 0 0;
+
+    .btn-close-mobile {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+
+  .account-menu-open {
+    padding: 156px 64px 0 64px;
+  }
+
+  .basket-menu {
+    padding: 110px 0 0 0;
+  }
+
+  .basket-menu-open {
+    padding: 110px 30px 30px 30px;
+  }
+
   .header {
     padding: 30px 90px 30px 30px;
 
@@ -191,7 +257,7 @@
       height: 22px;
       margin-left: 30px;
 
-      & img {
+      & svg {
         display: block;
         width: 100%;
         height: 100%;
@@ -211,8 +277,78 @@
 }
 
 @media (max-width: 767px) {
+  .btn-menu-wrapper {
+    width: 40px;
+    height: 60px;
+    background-color: rgba(44, 43, 43, 0);
+
+    .btn-menu {
+      top: 18px;
+      right: 4px;
+    }
+  }
+
+  .account-menu {
+    min-height: 480px;
+    height: 480px;
+    padding: 90px 0 0 0;
+
+    & p {
+      font-size: 18px;
+      line-height: 24px;
+
+      & a {
+        display: block;
+        color: $gold-color;
+      }
+    }
+
+    & .btn-block {
+      & .btn {
+        width: 100%;
+        margin-bottom: 10px;
+        height: 40px;
+        line-height: 38px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .account-menu-open {
+    width: 100vw;
+    min-height: 480px;
+    height: 480px;
+    padding: 90px 16px 0 20px;
+
+    & ~ .header .logo {
+      display: flex;
+      z-index: 3;
+    }
+  }
+
+  .basket-menu {
+    padding: 90px 0 0 0;
+
+    & ~ .header .logo {
+      display: flex;
+      z-index: 3;
+    }
+
+    & .basket-menu-list {
+      padding-right: 20px;
+    }
+  }
+
+  .basket-menu-open {
+    width: 100vw;
+    padding: 90px 20px 20px 20px;
+  }
+
   .header {
-    padding: 15px 75px 15px 15px;
+    padding: 15px 60px 15px 15px;
 
     & .logo {
       flex: 0 0 55px;
@@ -236,6 +372,24 @@
     & .btn {
       margin: 0;
       display: none;
+    }
+
+    & .btn-account {
+      height: 22px;
+
+      & svg {
+        width: 16px;
+        height: 16px;
+        margin-right: 0;
+      }
+
+      & span {
+        display: none;
+      }
+    }
+
+    & .btn-basket {
+      margin-left: 21px;
     }
   }
 }
@@ -1266,10 +1420,33 @@
       width: calc(100vw - 60px);
       height: 600px;
     }
+
+    & .slider-nav {
+      width: calc(100vw - 60px);
+      position: absolute;
+      left: 0;
+      bottom: 46px;
+      padding: 0 0 0 30px;
+
+      .slick-prev,
+      .slick-next {
+        right: 0;
+      }
+
+      & .slick-prev {
+        top: -80px;
+      }
+
+      & .slick-next {
+        top: -120px;
+      }
+    }
   }
 
   .preview-item {
     display: block;
+    width: 72%;
+    margin: auto;
 
     & .img {
       width: 73%;
@@ -1307,8 +1484,29 @@
 }
 
 @media (max-width: 767px) {
-  .home-slider .preview-list {
-    display: none;
+  .home-slider {
+    & .slider-for {
+      width: 100%;
+      height: 600px;
+    }
+
+    & .slider-nav {
+      width: 100%;
+
+      & .slick-track {
+        display: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      & .slick-prev {
+        top: -250px;
+      }
+
+      & .slick-next {
+        top: -290px;
+      }
+    }
   }
 }
 
@@ -1616,28 +1814,6 @@
       & .btn {
         min-width: 173px;
       }
-
-      & .btn-basket {
-        width: 23px;
-        height: 22px;
-        margin-left: 30px;
-
-        & img {
-          display: block;
-          width: 100%;
-          height: 100%;
-        }
-
-        & span {
-          width: 14px;
-          height: 14px;
-          font-size: 9px;
-          line-height: 14px;
-          right: -5px;
-          bottom: -8px;
-          opacity: 1;
-        }
-      }
     }
 
     & .nav-block {
@@ -1657,36 +1833,6 @@
           object-fit: cover;
         }
       }
-    }
-  }
-
-  .btn-menu {
-    height: 13px;
-    width: 30px;
-    top: 31px;
-    right: 15px;
-
-    & .bar {
-      &,
-      &::before,
-      &::after {
-        height: 2px;
-      }
-
-      &::before {
-        top: -6px;
-      }
-
-      &::after {
-        top: 6px;
-      }
-    }
-  }
-
-  .btn-menu-active .bar {
-    &::before,
-    &::after {
-      top: 0;
     }
   }
 
@@ -1729,8 +1875,8 @@
 
 @media (max-width: 767px) {
   .menu {
-    height: 568px;
     width: 0;
+    padding-top: 165px;
 
     &:before {
       display: none;
@@ -1758,11 +1904,6 @@
       & .btn {
         width: 100%;
         margin-left: 0;
-      }
-
-      & .btn-basket {
-        margin: 0;
-        display: none;
       }
     }
 
@@ -1797,13 +1938,33 @@
     }
   }
 
-  .btn-menu {
-    top: 18px;
-    right: 4px;
-  }
-
   .menu-open {
     width: 100vw;
+
+    & ~ .header-wrapper .header {
+      & .logo {
+        align-items: center;
+        flex: 0 0 100%;
+        height: auto;
+
+        & .logo-img {
+          margin-right: 11px;
+          height: 58px;
+        }
+
+        & .logo-text {
+          display: flex;
+          color: $text-color;
+        }
+      }
+
+      & .btn-menu-open {
+        margin: 0;
+        width: calc(100% - 70px);
+        position: absolute;
+        bottom: -35px;
+      }
+    }
 
     & .menu-aside {
       width: 40px;
