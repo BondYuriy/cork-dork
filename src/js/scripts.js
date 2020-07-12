@@ -1,18 +1,32 @@
 $(document).ready(function () {
   /* menu */
 
+  // var isOpenBackdrop = $('.menu-backdrop').hasClass(menu-backdrop-view);
+
   $('.js-menu').on('click', function () {
     $(this).toggleClass('btn-menu-active');
     $('.menu').toggleClass('menu-open');
-    $('.menu-backdrop').toggleClass('menu-backdrop-view');
+    // $('.menu-backdrop').toggleClass('menu-backdrop-view');
+    $('.accaunt-menu').removeClass('account-menu-open');
+    $('.basket-menu').removeClass('basket-menu-open');
   });
 
   /* accaunt-menu */
 
   $('.btn-account').on('click', function () {
-    // $(this).toggleClass('btn-menu-active');
     $('.accaunt-menu').toggleClass('account-menu-open');
     // $('.menu-backdrop').toggleClass('menu-backdrop-view');
+    $('.menu').removeClass('menu-open');
+    $('.basket-menu').removeClass('basket-menu-open');
+  });
+
+  /* basket-menu */
+
+  $('.btn-basket').on('click', function () {
+    $('.basket-menu').toggleClass('basket-menu-open');
+    // $('.menu-backdrop').toggleClass('menu-backdrop-view');
+    $('.menu').removeClass('menu-open');
+    $('.accaunt-menu').removeClass('account-menu-open');
   });
 
   /* carousel */

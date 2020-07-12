@@ -18,6 +18,10 @@
     & .slick-track {
       padding: 30px 0;
 
+      & .item {
+        cursor: pointer;
+      }
+
       & .slick-slide:focus,
       .item:focus,
       .preview-item:focus {

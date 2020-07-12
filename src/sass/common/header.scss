@@ -59,6 +59,110 @@
   }
 }
 
+.basket-menu {
+  width: 0vw;
+  min-height: 980px;
+  height: 100vh;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  transition: 0.3s;
+  padding: 180px 0 0 0;
+  overflow: hidden;
+
+  & .basket-menu-list {
+    height: 690px;
+    overflow-y: scroll;
+    padding-right: 40px;
+    margin-bottom: 50px;
+
+    & .basket-menu-item {
+      display: flex;
+      margin-bottom: 40px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      & .img-block {
+        flex: 0 0 42%;
+        height: 105px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 18px;
+
+        & img {
+          display: block;
+          min-width: 100%;
+          min-height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      & .basket-menu-info {
+        & .title {
+          margin: 0;
+          height: 36px;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 18px;
+          color: $text-color;
+          overflow: hidden;
+          margin-bottom: 5px;
+        }
+
+        & .price {
+          display: block;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          color: #6b0d36;
+          margin-bottom: 5px;
+        }
+
+        & .quantity {
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 15px;
+          text-transform: uppercase;
+          color: $text-color;
+        }
+
+        & .btn-remove {
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 15px;
+          color: #656567;
+          cursor: pointer;
+          transition: 0.3s;
+
+          &:hover {
+            color: $gold-color;
+          }
+        }
+      }
+    }
+  }
+
+  & .btn {
+    width: calc(100% - 40px);
+  }
+}
+
+.basket-menu-open {
+  width: 26.5vw;
+  height: 100vh;
+  padding: 180px 46px 40px 40px;
+
+  & ~ .header .btn-account span {
+    color: $text-color;
+  }
+}
+
 .btn-menu-wrapper {
   width: 120px;
   height: 100%;
@@ -76,6 +180,7 @@
     right: 36px;
     z-index: 12;
     transform: matrix(-1, 0, 0, 1, 0, 0);
+    cursor: pointer;
 
     & .bar {
       opacity: 0.7;
@@ -199,12 +304,13 @@
     }
   }
 
-  & .basket {
+  & .btn-basket {
     display: block;
     height: 30px;
     margin-left: 3.55%;
     position: relative;
     z-index: 2;
+    cursor: pointer;
 
     & svg {
       display: block;
