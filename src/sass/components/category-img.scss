@@ -1,0 +1,14 @@
+.category-img {
+  height: 155px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 40px;
+
+  & img {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+  }
+}

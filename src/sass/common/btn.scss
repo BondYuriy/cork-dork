@@ -37,8 +37,7 @@
   color: $text-color;
 
   &:hover {
-    background-color: $text-color;
-    color: $white-text;
+    border: 1px solid $gold-color;
   }
 }
 

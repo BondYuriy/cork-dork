@@ -1,0 +1,143 @@
+.our-card {
+  & .img-block {
+    display: block;
+    border: 1px solid #eceae5;
+    height: 311px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+    overflow: hidden;
+
+    & img {
+      display: block;
+      width: auto;
+      height: 100%;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      & img {
+        transform: scale(1.04);
+      }
+    }
+  }
+
+  & .card-info {
+    & .title {
+      margin-bottom: 17px;
+
+      a {
+        font-weight: $Semi-bold;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        color: $text-color;
+        transition: 0.3s;
+
+        &:hover {
+          color: $gold-color;
+        }
+      }
+    }
+
+    & .sub-title {
+      font-weight: $Semi-bold;
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.1px;
+      color: #ccb48a;
+    }
+
+    & .info-text {
+      margin-bottom: 15px;
+      height: 72px;
+      overflow: hidden;
+
+      & p {
+        font-family: $HeadingPro;
+        font-size: 12px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    & .quantity-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-top: 1px solid #eeece8;
+      border-bottom: 1px solid #eeece8;
+      margin-bottom: 30px;
+
+      & .text {
+        font-weight: $Semi-bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $gold-color;
+      }
+
+      & .counter {
+        display: flex;
+        align-items: center;
+
+        & .num {
+          padding: 0 16px;
+          font-weight: $Semi-bold;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: #2c2b2b;
+        }
+
+        & .regulator {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          background: #f3f5f5;
+          border-radius: 1px;
+          font-weight: $medium;
+          cursor: pointer;
+
+          &:hover {
+            background: #ccb48a;
+            color: $white-text;
+          }
+        }
+      }
+    }
+
+    & .info-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .price {
+        font-weight: $Semi-bold;
+        font-size: 20px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+      }
+
+      & .btn {
+        width: 59.8%;
+        height: 50px;
+        line-height: 48px;
+        font-weight: $Semi-bold;
+        font-size: 14px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
