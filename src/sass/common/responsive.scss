@@ -2413,3 +2413,68 @@
     }
   }
 }
+
+/* special-offers-page */
+
+@media (min-width: 1920px) {
+  .special-offers-page-list {
+    margin-bottom: 60px;
+
+    & .special-offers-item {
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin-bottom: 0;
+
+        & .card .card-info {
+          border: 0;
+        }
+      }
+
+      & .card {
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .card-img {
+          flex: 0 0 40.9%;
+          height: 455px;
+        }
+
+        & .card-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 0;
+          flex: 0 0 56.37%;
+          position: static;
+          border-bottom: 1px solid #eceae5;
+
+          & .sticker {
+            left: 0;
+            top: calc(100% - 107px);
+          }
+
+          & .title {
+            width: 76.7%;
+            margin-bottom: 30px;
+
+            & a {
+              height: auto;
+            }
+          }
+
+          & p {
+            height: auto;
+            width: 70%;
+            margin-bottom: 32px;
+          }
+
+          & .btn {
+            width: 245px;
+            min-width: 200px;
+          }
+        }
+      }
+    }
+  }
+}
