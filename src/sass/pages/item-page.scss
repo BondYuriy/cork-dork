@@ -9,12 +9,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     & img {
       display: block;
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    & .sticker {
+      position: absolute;
+      left: 0;
+      bottom: 0;
     }
   }
 
