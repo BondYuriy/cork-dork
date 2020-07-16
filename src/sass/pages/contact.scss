@@ -1,0 +1,217 @@
+.contact-page-block {
+  padding-bottom: 70px;
+
+  & .contact-box {
+    padding: 70px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 84px;
+    padding-left: 100px;
+
+    & .contact {
+      flex: 0 0 48%;
+
+      & .adress,
+      .phone,
+      .schedule {
+        display: flex;
+        margin-bottom: 13px;
+
+        & img {
+          margin-right: 24px;
+        }
+
+        & a {
+          font-weight: $medium;
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: 1px;
+          color: $text-color;
+          transition: 0.3s;
+
+          &:hover {
+            color: $gold-color;
+          }
+        }
+      }
+    }
+
+    & .schedule {
+      display: flex;
+
+      & img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 24px;
+        margin-top: 10px;
+      }
+
+      & span {
+        font-weight: $medium;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 1px;
+        color: $text-color;
+
+        & a {
+          font-weight: $medium;
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: 1px;
+          color: $text-color;
+          text-decoration: underline;
+          transition: 0.3s;
+
+          &:hover {
+            color: $gold-color;
+          }
+        }
+      }
+    }
+  }
+
+  & .contact-info {
+    display: flex;
+    min-height: 435px;
+    position: relative;
+
+    & .form-info {
+      flex: 0 0 40.86%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & img {
+        position: absolute;
+        z-index: 1;
+      }
+
+      & .info {
+        margin: 0;
+        width: 57%;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+
+        & .title {
+          font-family: $HeadingPro;
+          font-weight: $bold;
+          font-size: 36px;
+          line-height: 56px;
+          letter-spacing: -0.529412px;
+        }
+
+        & p {
+          font-weight: $medium;
+          font-size: 18px;
+          line-height: 24px;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    & .form-box {
+      flex: 0 0 59.14%;
+      background-color: $beige-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & form {
+        flex: 0 0 54.8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        & input[type='text'],
+        input[type='email'] {
+          flex: 0 0 47.85%;
+        }
+
+        & input[type='text'],
+        input[type='email'],
+        textarea {
+          border: 0;
+          border-radius: 0;
+          padding: 0;
+          background-color: rgba(255, 255, 255, 0);
+          display: block;
+          width: 100%;
+          resize: none;
+          border-bottom: 1px solid $text-color;
+
+          &::placeholder {
+            font-weight: $medium;
+            font-size: 16px;
+            letter-spacing: 0.888889px;
+            color: $gold-color;
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        & input[type='text'],
+        input[type='email'] {
+          height: 31px;
+          line-height: 30px;
+          margin-bottom: 49px;
+        }
+
+        & textarea {
+          flex: 0 0 100%;
+          height: 65px;
+        }
+
+        & input[type='submit'] {
+          flex: 0 0 100%;
+          border: 0;
+          margin: 0;
+          padding: 0;
+          border-radius: 0;
+          background: none;
+          margin-top: 49px;
+          width: 100%;
+          height: 40px;
+          border: 1px solid $text-color;
+          font-weight: $Semi-bold;
+          font-size: 12px;
+          line-height: 38px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $text-color;
+
+          &:hover {
+            background-color: $text-color;
+            color: $white-text;
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+
+  & .map {
+    height: 440px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+}
