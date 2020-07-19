@@ -53,6 +53,7 @@
   width: 26.5vw;
   height: 100vh;
   padding: 248px 97px 0 79px;
+  box-shadow: 0px 2px 4px rgba(44, 43, 43, 0.4);
 
   & ~ .header .btn-account span {
     color: $text-color;
@@ -159,6 +160,7 @@
   width: 26.5vw;
   height: 100vh;
   padding: 180px 46px 40px 40px;
+  box-shadow: 0px 2px 4px rgba(44, 43, 43, 0.4);
 
   & ~ .header .btn-account span {
     color: $text-color;
