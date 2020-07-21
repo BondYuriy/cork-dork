@@ -352,11 +352,15 @@
     }
   }
 
-  .menu-open {
+  & .menu-open {
     width: 100vw;
 
     & .menu-aside {
-      width: 120px;
+      width: 140px;
+
+      & .social {
+        width: 140px;
+      }
     }
   }
 
@@ -422,11 +426,18 @@
       z-index: 0;
     }
 
+    & .basket-menu-open {
+      & ~ .header .btn-header {
+        position: relative;
+      }
+    }
+
     & .header {
       padding: 17px 185px 17px 5%;
       align-items: center;
       position: relative;
       border-bottom: 1px solid #eceae5;
+      background-color: #fff;
 
       & .logo .logo-text span {
         color: $text-color;

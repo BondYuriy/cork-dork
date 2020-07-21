@@ -51,7 +51,7 @@
             }
           }
 
-          & .active {
+          & .active, span {
             font-weight: $bold;
             color: $gold-color;
             display: flex;

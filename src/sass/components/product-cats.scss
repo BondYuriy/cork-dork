@@ -1,0 +1,50 @@
+.product-cats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 37px;
+
+  & .category {
+    margin-right: 90px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & a,
+    span,
+    .active {
+      display: block;
+      font-weight: $Semi-bold;
+      font-size: 20px;
+      line-height: 24px;
+      letter-spacing: 3.33333px;
+      text-transform: uppercase;
+      color: $gold-color;
+      padding-bottom: 12px;
+      position: relative;
+      transition: 0.3s;
+    }
+
+    & a:hover {
+      color: $text-color;
+    }
+
+    & .active, span {
+      color: $text-color;
+
+      &:before {
+        display: block;
+        content: '';
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $text-color;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+      }
+    }
+  }
+}
