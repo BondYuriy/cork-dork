@@ -3261,6 +3261,245 @@
   }
 }
 
+/* contact-page */
+
+@media (max-width: 1919px) {
+  .contact-page-block {
+    padding-bottom: 40px;
+
+    & .contact-box {
+      margin-bottom: 95px;
+      padding-left: 0;
+
+      & .contact {
+        & .adress,
+        .phone,
+        .schedule {
+          & a {
+            font-size: 20px;
+          }
+        }
+      }
+
+      & .schedule {
+        & span {
+          font-size: 20px;
+
+          & a {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    & .contact-info {
+      min-height: 420px;
+
+      & .form-info {
+        flex: 0 0 45%;
+
+        & .info {
+          width: 65%;
+        }
+      }
+
+      & .form-box {
+        flex: 0 0 55%;
+
+        & form {
+          flex: 0 0 57%;
+
+          & input[type='text'],
+          input[type='email'] {
+            margin-bottom: 45px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .contact-page-block {
+    & .contact-box {
+      margin-bottom: 43px;
+      padding: 22px 0 0 0;
+      align-items: start;
+
+      & .contact {
+        flex: 0 0 50%;
+
+        & .adress,
+        .phone,
+        .schedule {
+          & a {
+            font-size: 18px;
+          }
+        }
+
+        & .adress {
+          margin-bottom: 39px;
+        }
+      }
+
+      & .schedule {
+        & span {
+          font-size: 18px;
+
+          & a {
+            display: inline-block;
+            font-size: 18px;
+            margin-top: 39px;
+          }
+        }
+      }
+    }
+
+    & .contact-info {
+      min-height: auto;
+      display: block;
+
+      & .form-info {
+        padding: 72px 0 90px 0;
+      }
+
+      & .form-box {
+        padding: 56px 60px 46px 60px;
+
+        & form {
+          flex: 0 0 100%;
+
+          & input[type='text'],
+          input[type='email'],
+          textarea {
+            &::placeholder {
+              font-size: 12px;
+            }
+          }
+
+          & input[type='text'],
+          input[type='email'] {
+            height: 24px;
+            line-height: 23px;
+            margin-bottom: 29px;
+          }
+
+          & textarea {
+            height: 60px;
+          }
+
+          & input[type='submit'] {
+            margin-top: 41px;
+          }
+        }
+      }
+    }
+
+    & .map {
+      height: 260px;
+
+      & img {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-page-block {
+    & .contact-box {
+      display: block;
+      margin-bottom: 31px;
+      padding: 22px 0 0 0;
+
+      & .contact {
+        & .adress,
+        .phone,
+        .schedule {
+          & a {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.722222px;
+          }
+        }
+
+        & .adress {
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: 0.722222px;
+          margin-bottom: 19px;
+        }
+      }
+
+      & .schedule {
+        & span {
+          font-size: 13px;
+          line-height: 20px;
+          letter-spacing: 0.722222px;
+
+          & a {
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0.722222px;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    & .contact-info {
+      & .form-info {
+        padding: 40px 24px;
+
+        & .info {
+          width: 100%;
+
+          & .title {
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: -0.294118px;
+            margin-bottom: 11px;
+          }
+
+          & p {
+            font-size: 12px;
+            line-height: 18px;
+          }
+        }
+      }
+
+      & .form-box {
+        padding: 26px 24px 30px 24px;
+
+        & form {
+          display: block;
+
+          & input[type='text'],
+          input[type='email'],
+          textarea {
+            &::placeholder {
+              font-size: 10px;
+            }
+          }
+
+          & input[type='text'],
+          input[type='email'] {
+            margin-bottom: 26px;
+          }
+
+          & input[type='submit'] {
+            margin-top: 28px;
+          }
+        }
+      }
+    }
+
+    & .map {
+      height: 260px;
+    }
+  }
+}
+
 /* item-info-block-page */
 
 @media (max-width: 1919px) {
