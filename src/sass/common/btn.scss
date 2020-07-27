@@ -52,3 +52,23 @@
   border-bottom: 2px solid $gold-color;
   text-align: left;
 }
+
+.btn-gold-big {
+  display: inline-block;
+  min-width: 268px;
+  height: 50px;
+  background-color: $gold-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white-text;
+  transition: 0.3s;
+
+  &:hover {
+    color: $white-text;
+    opacity: 0.8;
+  }
+}

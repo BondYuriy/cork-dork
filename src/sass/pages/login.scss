@@ -1,0 +1,106 @@
+.login-block {
+  width: 100vw;
+  height: 100vh;
+  min-height: 980px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  & .post-288 {
+    width: 36.77%;
+    min-height: 540px;
+    background-color: $white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    padding: 50px 73px;
+
+    & .category-title {
+      margin: 0;
+      line-height: 48px;
+    }
+
+    & .title-desc {
+      display: block;
+      font-size: 18px;
+      line-height: 40px;
+      letter-spacing: -1px;
+      color: $gold-color;
+      margin-bottom: 30px;
+    }
+
+    & .entry-content {
+      & form {
+        margin-bottom: 40px;
+
+        & .form-row-first,
+        .form-row-last {
+          margin-bottom: 23px;
+
+          & label {
+            display: none;
+          }
+
+          & input {
+            display: block;
+            width: 100%;
+            height: 50px;
+            border: 1px solid #2c2b2b;
+            padding: 0 20px;
+
+            &::placeholder {
+              font-weight: 600;
+              font-size: 14px;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              color: #2c2b2b;
+            }
+
+            &:focus {
+              border: 1px solid $gold-color;
+            }
+          }
+        }
+
+        & .btn-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          & p {
+            margin: 0;
+          }
+
+          & .lost_password {
+            & a {
+              font-size: 14px;
+              line-height: 40px;
+              text-decoration-line: underline;
+              text-transform: uppercase;
+              color: #3e3d3d;
+              transition: 0.3s;
+
+              &:hover {
+                color: $gold-color;
+              }
+            }
+          }
+        }
+      }
+
+      & .text {
+        & a {
+          color: $gold-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

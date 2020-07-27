@@ -3795,6 +3795,18 @@
 
 /* special-offers-page */
 
+@media (max-width: 1919px) {
+  .login-block {
+    min-height: 900px;
+
+    & .post-288 {
+      width: 48%;
+    }
+  }
+}
+
+/* special-offers-page */
+
 @media (min-width: 768px) {
   .special-offers-page-list {
     margin-bottom: 30px;
