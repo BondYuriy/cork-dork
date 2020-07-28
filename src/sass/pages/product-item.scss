@@ -1,0 +1,169 @@
+.product {
+  display: flex;
+  justify-content: space-between;
+  padding: 41px 0 135px 0;
+
+  & .woocommerce-product-gallery {
+    flex: 0 0 40.9%;
+    min-height: 455px;
+
+    & .woocommerce-product-gallery__trigger {
+      position: absolute;
+      z-index: 2;
+    }
+
+    & figure {
+      margin: 0;
+      display: block;
+      height: 100%;
+
+      & .woocommerce-product-gallery__image {
+        height: 100%;
+
+        & a {
+          display: block;
+          height: 100%;
+
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+
+  & .entry-summary {
+    flex: 0 0 57%;
+
+    & .product_title {
+      margin: 0;
+      font-weight: $Semi-bold;
+      font-size: 30px;
+      line-height: 40px;
+      letter-spacing: -0.5px;
+      color: $text-color;
+      margin-bottom: 9px;
+    }
+
+    & .price {
+      font-weight: $Semi-bold;
+      font-size: 36px;
+      line-height: 44px;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      color: $text-color;
+      margin-bottom: 17px;
+    }
+
+    & .stock {
+      font-weight: $Semi-bold;
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: $text-color;
+      margin-bottom: 22px;
+    }
+
+    & form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      & .plus,
+      .minus {
+        border: 0;
+        width: 24px;
+        height: 24px;
+        background-color: #f3f5f5;
+        border-radius: 1px;
+        color: $text-color;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 18px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      & .plus {
+        left: 52%;
+      }
+
+      & .minus {
+        left: 46.7%;
+      }
+
+      & .quantity-block {
+        flex: 0 0 54.4%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #eeece8;
+        border-bottom: 1px solid #eeece8;
+        padding: 13px 0;
+
+        & label {
+          display: none;
+        }
+
+        & .text {
+          font-weight: $Semi-bold;
+          font-size: 14px;
+          line-height: 24px;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          color: $gold-color;
+        }
+
+        & .counter {
+          padding: 0 5px 0 0;
+
+          & input {
+            border: 0;
+            font-weight: $Semi-bold;
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $text-color;
+          }
+        }
+      }
+
+      & .button {
+        flex: 0 0 42%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        background: none;
+        height: 50px;
+        border: 1px solid $text-color;
+        font-weight: $Semi-bold;
+        font-size: 14px;
+        line-height: 48px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $text-color;
+        transition: 0.3s;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        &:hover {
+          border: 1px solid $gold-color;
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

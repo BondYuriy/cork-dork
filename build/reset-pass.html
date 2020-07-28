@@ -23,6 +23,7 @@
 
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- endinject -->
   </head>
   <body class="auth-page">
@@ -216,65 +217,59 @@
     </header>
 
     <main>
-      <div class="login-block">
+      <div class="reset-pass-block">
         <img src="images/Rectangle-9.jpg" alt="bi login" />
-        <article class="post-288 page type-page status-publish hentry">
-          <h1 class="category-title">Sign In</h1>
-          <span class="title-desc">with your Wine Club Member Account</span>
+        <article class="post-196 page type-page status-publish hentry">
+          <h1 class="category-title">Password Reset</h1>
+          <span class="title-desc">Please provide the email address used to sign up for your membership.</span>
           <div class="entry-content">
-            <form
-              class="woocommerce-form woocommerce-form-login login"
-              method="post"
-            >
-              <p class="form-row form-row-first">
-                <label for="username"
-                  >Username or email&nbsp;<span class="required">*</span></label
+            <div class="woocommerce">
+              <form
+                method="post"
+                class="woocommerce-ResetPassword lost_reset_password"
+              >
+                <p
+                  class="woocommerce-form-row woocommerce-form-row--first form-row form-row-first"
                 >
-                <input
-                  type="text"
-                  class="input-text"
-                  name="username"
-                  id="username"
-                  autocomplete="username"
-                  placeholder="email"
-                />
-              </p>
-              <p class="form-row form-row-last">
-                <label for="password"
-                  >Password&nbsp;<span class="required">*</span></label
-                >
-                <input
-                  class="input-text"
-                  type="password"
-                  name="password"
-                  id="password"
-                  autocomplete="current-password"
-                  placeholder="password"
-                />
-              </p>
-              <div class="clear"></div>
-              <div class="btn-block">
-                <p class="lost_password">
-                  <a
-                    href="http://corkdork.site-test.com.ua/account/lost-password/"
-                    >Lost your password?</a
-                  >
+                  <label for="user_login">Username or email</label>
+                  <input
+                    class="woocommerce-Input woocommerce-Input--text input-text"
+                    type="text"
+                    name="user_login"
+                    id="user_login"
+                    autocomplete="username"
+                    placeholder="email"
+                  />
                 </p>
-                <p class="form-row">
+
+                <div class="clear"></div>
+
+                <p class="woocommerce-form-row form-row">
+                  <input type="hidden" name="wc_reset_password" value="true" />
                   <button
                     type="submit"
-                    class="woocommerce-button button woocommerce-form-login__submit btn btn-gold-big"
-                    name="login"
-                    value="Login"
+                    class="woocommerce-Button button btn btn-gold-big"
+                    value="Reset password"
                   >
-                    Login
+                    Reset password
                   </button>
                 </p>
-              </div>
-            </form>
-            <p class="text">Existing Wine Club Members must <a href="#">create new sign in credentials</a></p>
-            <p class="text">EWant to become a Wine Club Member? <a href="#">Learn More</a></p>
+
+                <input
+                  type="hidden"
+                  id="woocommerce-lost-password-nonce"
+                  name="woocommerce-lost-password-nonce"
+                  value="4c4a3d58b1"
+                /><input
+                  type="hidden"
+                  name="_wp_http_referer"
+                  value="/account/lost-password/"
+                />
+              </form>
+              <p class="text">Questions? <a href="tel:8000000000">800-000-0000</a></p>
+            </div>
           </div>
+          <!-- .entry-content -->
         </article>
       </div>
     </main>
@@ -308,6 +303,7 @@
 
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
+    <script src="js/scripts.js"></script>
     <!-- endinject -->
   </body>
 </html>

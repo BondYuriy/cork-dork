@@ -11,8 +11,9 @@
 
     & img {
       display: block;
-      width: auto;
+      width: 100%;
       height: 100%;
+      object-fit: cover;
       transition: 0.3s;
     }
 
@@ -49,15 +50,12 @@
       color: #ccb48a;
     }
 
-    & .info-text {
+    & .prod_short_desc {
       margin-bottom: 15px;
-      height: 72px;
+      height: 96px;
       overflow: hidden;
 
       & p {
-        font-family: $HeadingPro;
-        font-size: 12px;
-
         &:last-child {
           margin-bottom: 0;
         }
@@ -83,11 +81,16 @@
         color: $gold-color;
       }
 
+      & label {
+        display: none;
+      }
+
       & .counter {
         display: flex;
         align-items: center;
 
-        & .num {
+        & input {
+          border: 0;
           padding: 0 16px;
           font-weight: $Semi-bold;
           font-size: 16px;
@@ -130,14 +133,163 @@
         text-transform: uppercase;
       }
 
-      & .btn {
+      & .added_to_cart {
+        display: none;
+      }
+
+      & .button {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
         width: 59.8%;
         height: 50px;
+        border: 1px solid $text-color;
         line-height: 48px;
         font-weight: $Semi-bold;
         font-size: 14px;
         letter-spacing: 2px;
+        text-transform: uppercase;
+        color: $text-color;
+        text-align: center;
+
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+
+        &:hover {
+          border: 1px solid $gold-color;
+          color: $text-color;
+        }
       }
     }
+  }
+
+  & .modal {
+    & .modal-dialog {
+      max-width: 706px;
+      width: 706px;
+      box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+
+      & .modal-content {
+        border: 0;
+        position: relative;
+        padding-bottom: 46px;
+
+        & .close {
+          position: absolute;
+          right: 0;
+          top: -30px;
+          color: $gold-color;
+          font-weight: 300;
+          font-size: 40px;
+          line-height: 30px;
+          overflow: hidden;
+          z-index: 3;
+          text-shadow: none;
+        }
+
+        & .img-block {
+          border: 0;
+          height: 400px;
+          margin-bottom: 7px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          & img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        & .model_prod_title {
+          font-weight: $Semi-bold;
+          font-size: 24px;
+          line-height: 40px;
+          letter-spacing: -0.5px;
+          color: $text-color;
+          padding: 0 49px;
+        }
+
+        & p {
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: -0.1px;
+          padding: 0 49px;
+        }
+
+        & .quantity-block {
+          margin: 0 49px 34px 49px;
+        }
+
+        & .btn-block {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 49px;
+
+          & .price {
+            font-weight: $Semi-bold;
+            font-size: 20px;
+            line-height: 24px;
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+          }
+
+          & .added_to_cart {
+            display: none;
+          }
+
+          & > a {
+            font-weight: $Semi-bold;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #979797;
+            transition: 0.3s;
+
+            &:hover {
+              color: $gold-color;
+            }
+          }
+
+          & .button {
+            margin: 0;
+            padding: 0;
+            border-radius: 0;
+            width: 248px;
+            height: 50px;
+            border: 1px solid $text-color;
+            line-height: 48px;
+            font-weight: $Semi-bold;
+            font-size: 14px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $text-color;
+            text-align: center;
+
+            &:focus {
+              outline: none;
+              box-shadow: none;
+            }
+
+            &:hover {
+              border: 1px solid $gold-color;
+              color: $text-color;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & .show {
+    backdrop-filter: blur(12px);
   }
 }
