@@ -459,3 +459,31 @@
     }
   }
 }
+
+.auth-page {
+  & .menu {
+    width: 0;
+
+    & .menu-aside {
+      width: 0;
+    }
+  }
+
+  & .menu-open {
+    width: 100vw;
+
+    & .menu-aside {
+      width: 120px;
+
+      & .social {
+        width: 120px;
+      }
+    }
+  }
+
+  & .header-wrapper {
+    & .btn-menu-wrapper {
+      background-color: rgba(255, 255, 255, 0);
+    }
+  }
+}

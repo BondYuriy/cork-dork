@@ -95,6 +95,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .btn-gold-big {
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+  }
+}
+
 /* header */
 
 @media (min-width: 2560px) {
@@ -306,6 +314,28 @@
       }
     }
   }
+
+  .auth-page {
+    & .menu {
+      width: 0;
+
+      & .menu-aside {
+        width: 0;
+      }
+    }
+
+    & .menu-open {
+      width: 100vw;
+
+      & .menu-aside {
+        width: 100px;
+
+        & .social {
+          width: 100px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 1199px) {
@@ -438,6 +468,28 @@
 
         & .btn-basket {
           margin-left: 50;
+        }
+      }
+    }
+  }
+
+  .auth-page {
+    & .menu {
+      width: 0;
+
+      & .menu-aside {
+        width: 0;
+      }
+    }
+
+    & .menu-open {
+      width: 100vw;
+
+      & .menu-aside {
+        width: 60px;
+
+        & .social {
+          width: 60px;
         }
       }
     }
@@ -624,6 +676,28 @@
 
         & .btn-basket {
           margin-left: 22px;
+        }
+      }
+    }
+  }
+
+  .auth-page {
+    & .menu {
+      width: 0;
+
+      & .menu-aside {
+        width: 0;
+      }
+    }
+
+    & .menu-open {
+      width: 100vw;
+
+      & .menu-aside {
+        width: 40px;
+
+        & .social {
+          width: 40px;
         }
       }
     }
@@ -3798,9 +3872,79 @@
 @media (max-width: 1919px) {
   .login-block {
     min-height: 900px;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-block {
+    min-height: auto;
 
     & .post-288 {
-      width: 48%;
+      width: 87.5%;
+      min-height: 458px;
+      padding: 40px 20px;
+
+      & .title-desc {
+        font-size: 13px;
+        line-height: 15px;
+        margin-bottom: 20px;
+      }
+
+      & .entry-content {
+        & form {
+          margin-bottom: 30px;
+
+          & .form-row {
+            margin-right: 0;
+            margin-left: 0;
+          }
+
+          & .form-row-first,
+          .form-row-last {
+            margin-bottom: 10px;
+
+            & input {
+              display: block;
+              width: 100%;
+              height: 40px;
+
+              &::placeholder {
+                font-size: 10px;
+              }
+            }
+          }
+
+          & .btn-block {
+            flex-direction: column-reverse;
+
+            & .lost_password {
+              & a {
+                font-size: 12px;
+              }
+            }
+
+            & .form-row {
+              margin-right: 0;
+              margin-left: 0;
+
+              & .button {
+                min-width: 240px;
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        & .text {
+          font-size: 12px;
+          line-height: 16px;
+
+          & a {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
     }
   }
 }
