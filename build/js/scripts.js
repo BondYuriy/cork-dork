@@ -71,7 +71,7 @@ $(document).ready(function () {
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
   });
   $('.slider-nav').slick({
     slidesToShow: 3,
@@ -79,9 +79,8 @@ $(document).ready(function () {
     asNavFor: '.slider-for',
     dots: true,
     centerMode: false,
-    focusOnSelect: true
+    focusOnSelect: true,
   });
-
 
   /* to-top */
 
@@ -105,6 +104,10 @@ $(document).ready(function () {
       1000,
     );
     return false;
+  });
+
+  $(function () {
+    $('.datetimepicker').datetimepicker();
   });
 });
 
