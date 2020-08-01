@@ -105,10 +105,6 @@ $(document).ready(function () {
     );
     return false;
   });
-
-  $(function () {
-    $('.datetimepicker').datetimepicker();
-  });
 });
 
 new WOW().init();

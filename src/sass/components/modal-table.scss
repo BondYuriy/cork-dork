@@ -9,7 +9,7 @@
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.15);
       border-radius: 2px;
       position: relative;
-      width: 706px;
+      width: 100%;
       min-height: 540px;
       padding: 52px 73px 73px 73px;
 
@@ -57,9 +57,7 @@
       & .modal-body {
         padding: 0;
 
-        .date-block,
-        .time-block,
-        .select-block {
+        & .input-block {
           margin-bottom: 26px;
           position: relative;
 
@@ -86,9 +84,6 @@
             background-color: rgba(255, 255, 255, 0);
             position: relative;
             z-index: 2;
-
-            &::-webkit-clear-button {
-            }
 
             &::-webkit-calendar-picker-indicator {
               opacity: 0;

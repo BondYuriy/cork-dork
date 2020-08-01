@@ -19,9 +19,27 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $white-text;
+  transition: 0.3s;
 
   &:hover {
     background-color: $gold-color;
+    color: $white-text;
+  }
+}
+
+.btn-white-transparent {
+  height: 40px;
+  border: 1px solid $white-text;
+  font-weight: $Semi-bold;
+  font-size: 12px;
+  line-height: 38px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white-text;
+  transition: 0.3s;
+
+  &:hover {
+    border: 1px solid $gold-color;
     color: $white-text;
   }
 }
@@ -35,6 +53,7 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   color: $text-color;
+  transition: 0.3s;
 
   &:hover {
     border: 1px solid $gold-color;
@@ -51,6 +70,7 @@
   color: $gold-color;
   border-bottom: 2px solid $gold-color;
   text-align: left;
+  transition: 0.3s;
 }
 
 .btn-gold-big {

@@ -1,0 +1,75 @@
+.banners-block, .banners-desc-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 51px;
+
+  & .banner-item {
+    flex: 0 0 49%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+
+    & img {
+      display: block;
+      width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      position: absolute;
+      z-index: 1;
+    }
+
+    & .banner-info-block {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      padding: 58px 60px;
+
+      & .banner-info {
+        flex: 0 0 49%;
+
+        & .title {
+          margin: 0;
+          font-family: $HeadingPro;
+          font-weight: $bold;
+          font-size: 24px;
+          line-height: 30px;
+          letter-spacing: -0.705882px;
+          color: $white-text;
+          text-transform: uppercase;
+          margin-bottom: 6px;
+        }
+
+        & .text {
+          margin: 0;
+          color: $white-text;
+        }
+      }
+
+      & .btn {
+        flex: 0 0 49%;
+      }
+    }
+
+    & .banner-desc {
+      .title {
+        font-family: $HeadingPro;
+        font-style: normal;
+        font-weight: $bold;
+        font-size: 34px;
+        line-height: 50px;
+        letter-spacing: -0.705882px;
+        color: $text-color;
+      }
+
+      & .text {
+        margin: 0;
+        color: $text-color;
+      }
+    }
+  }
+}

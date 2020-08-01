@@ -1,0 +1,110 @@
+.category-desc {
+  padding: 80px 147px;
+  min-height: 338px;
+  position: relative;
+  margin-bottom: 78px;
+
+  & img {
+    display: block;
+    width: 338px;
+    height: 338px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+
+  & p {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 44px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.article-club {
+  margin-bottom: 51px;
+
+  & .title {
+    font-family: $HeadingPro;
+    font-style: normal;
+    font-weight: $bold;
+    font-size: 34px;
+    line-height: 50px;
+    letter-spacing: -0.705882px;
+    margin-bottom: 41px;
+  }
+
+  & ul {
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+
+    & li {
+      margin-bottom: 40px;
+
+      & .sub-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 10px;
+      }
+
+      & p {
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        & a {
+          color: $text-color;
+          text-decoration: underline;
+
+          &:hover {
+            color: $gold-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.club-article-list {
+  display: flex;
+  margin: 87px 0 50px 0;
+
+  & .club-article-item {
+    flex: 0 0 32.5%;
+    margin-right: 1.25%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    & .card {
+      & .card-info {
+        padding: 24px 40px 60px 40px;
+
+        & .title {
+          margin-bottom: 35px;
+
+          & a {
+            height: auto;
+          }
+        }
+
+        & p {
+          height: auto;
+          min-height: 96px;
+          margin-bottom: 50px;
+        }
+
+        & .btn {
+          width: 78%;
+        }
+      }
+    }
+  }
+}

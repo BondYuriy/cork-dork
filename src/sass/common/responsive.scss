@@ -101,6 +101,12 @@
     font-size: 12px;
     line-height: 30px;
   }
+
+  .btn-white-transparent {
+    height: 30px;
+    font-size: 10px;
+    line-height: 28px;
+  }
 }
 
 /* header */
@@ -1131,6 +1137,111 @@
           &:last-child {
             margin-bottom: 0;
           }
+        }
+      }
+    }
+  }
+}
+
+/* banners-block */
+
+@media (max-width: 1199px) {
+  .banners-block {
+    & .banner-item {
+      & .banner-info-block {
+        display: block;
+        padding: 48px;
+
+        & .banner-info {
+          margin-bottom: 24px;
+
+          & .title {
+            font-size: 18px;
+            line-height: 30px;
+            margin-bottom: 0;
+          }
+
+          & .text {
+            font-size: 14px;
+          }
+        }
+
+        & .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  & .banners-desc-block {
+    display: block;
+
+    & .banner-item {
+      & .banner-info-block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & .banner-info {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .banners-block {
+    display: block;
+    margin-bottom: 32px;
+
+    & .banner-item {
+      margin-bottom: 20px;
+
+      & .banner-info-block {
+        display: block;
+        padding: 60px 26px;
+
+        & .banner-info {
+          margin-bottom: 15px;
+
+          & .title {
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 0;
+          }
+
+          & .text {
+            font-size: 12px;
+          }
+        }
+
+        & .btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  & .banners-desc-block {
+    & .banner-item {
+      & .banner-info-block {
+        & .banner-info {
+          margin-bottom: 15px;
+        }
+      }
+
+      & .banner-desc {
+        .title {
+          font-size: 20px;
+          line-height: 30px;
+          letter-spacing: -0.294118px;
+        }
+
+        & .text {
+          color: $text-color;
+          font-size: 10px;
+          line-height: 16px;
         }
       }
     }
@@ -2621,6 +2732,61 @@
   }
 }
 
+/* modal-table */
+
+@media (max-width: 767px) {
+  .modal-table {
+    & .modal-dialog {
+      max-width: 280px;
+      width: 280px;
+      min-height: auto;
+      margin: 50px auto 0 auto;
+
+      & .modal-content {
+        width: 100%;
+        min-height: auto;
+        padding: 40px 20px;
+
+        & .modal-header {
+          margin-bottom: 20px;
+
+          & .close {
+            width: 40px;
+            height: 40px;
+          }
+
+          & .modal-title {
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.294118px;
+          }
+        }
+
+        & .modal-body {
+          & .input-block {
+            margin-bottom: 15px;
+
+            & input,
+            select {
+              height: 40px;
+              line-height: 38px;
+              padding-left: 55px;
+              font-size: 12px;
+            }
+          }
+
+          & .btn {
+            height: 30px;
+            font-size: 12px;
+            line-height: 30px;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* our-card */
 
 @media (max-width: 1919px) {
@@ -3119,12 +3285,33 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .product-cats {
     margin-bottom: 20px;
 
     & .category {
-      margin-right: 20px;
+      margin-right: 34px;
+
+      & a,
+      span,
+      .active {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+        padding-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .product-cats {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+
+    & .category {
+      margin-right: 0;
+      margin-bottom: 8px;
 
       & a,
       span,
@@ -4627,6 +4814,159 @@
       & .card {
         & .card-info {
           border-bottom: 1px solid #eceae5;
+        }
+      }
+    }
+  }
+}
+
+/* wine-club-page */
+
+@media (max-width: 1199px) {
+  .category-desc {
+    padding: 20px 60px;
+    min-height: 169px;
+    margin-bottom: 30px;
+
+    & img {
+      width: 169px;
+      height: 169px;
+    }
+
+    & p {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+
+  .article-club {
+    .title {
+      font-size: 30px;
+    }
+
+    & ul {
+      -moz-column-count: 1;
+      -webkit-column-count: 1;
+      column-count: 1;
+    }
+  }
+
+  .club-article-list {
+    display: flex;
+    margin: 25px 0 24px 0;
+
+    & .club-article-item {
+      & .card {
+        & .card-info {
+          padding: 14px 20px 20px 0;
+
+          & .title {
+            margin-bottom: 14px;
+
+            & a {
+              height: auto;
+            }
+          }
+
+          & p {
+            height: auto;
+            min-height: 96px;
+            margin-bottom: 23px;
+          }
+
+          & .btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .category-desc {
+    padding: 16px 24px;
+    min-height: 90px;
+    margin-bottom: 35px;
+
+    & img {
+      width: 90px;
+      height: 90px;
+      left: -20px;
+    }
+
+    & p {
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .article-club {
+    margin-bottom: 17px;
+
+    .title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 25px;
+    }
+
+    & ul {
+      & li {
+        margin-bottom: 17px;
+
+        & .sub-title {
+          font-size: 14px;
+          line-height: 16px;
+        }
+
+        & p {
+          font-size: 10px;
+          line-height: 16px;
+
+          & a {
+            font-size: 10px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .club-article-list {
+    display: flex;
+    margin: 25px -20px 24px -20px;
+    overflow-x: scroll;
+
+    & .club-article-item {
+      flex: 0 0 71%;
+      margin: 0 5px;
+
+      & .card {
+        & .card-img {
+          height: 150px;
+        }
+
+        & .card-info {
+          padding: 14px 20px 20px 0;
+
+          & .title {
+            margin-bottom: 14px;
+
+            & a {
+              height: auto;
+            }
+          }
+
+          & p {
+            height: auto;
+            min-height: 93px;
+            margin-bottom: 0;
+          }
+
+          & .btn {
+            width: 100%;
+            margin-top: 23px;
+          }
         }
       }
     }
